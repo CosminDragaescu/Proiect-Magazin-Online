@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATELIER — Haine confecționate manual</title>
+  <meta name="description" content="Haine confecționate manual, în ediții limitate. Quiet luxury, materiale premium, croială atemporală, fabricat în România." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="topbar">Livrare gratuită la comenzile de peste 450 lei · Confecționat manual în România</div>
+
+  <header class="header">
+    <div class="container nav">
+      <button class="nav-toggle" aria-label="Meniu">☰</button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Acasă</a></li>
+          <li><a href="magazin.html">Magazin</a></li>
+          <li><a href="index.html#colectie">Colecție</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="index.html" class="logo">Atelier</a>
+      <div class="nav-actions">
+        <a href="#" aria-label="Cont">Cont</a>
+        <button data-open-cart aria-label="Coș">Coș <span class="cart-count">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-img" style="background-image:url('images/hero.png')"></div>
+    <div class="container">
+      <div class="hero-content">
+        <p class="eyebrow">Colecția Vară 2026</p>
+        <h1 class="hero-title">Un nou vibe.<br>Croit pentru tine.</h1>
+        <p class="hero-text">Haine confecționate manual, în ediții limitate. Materiale premium, croială atemporală, atenție la fiecare cusătură.</p>
+        <a href="magazin.html" class="btn btn-on-dark">Descoperă colecția</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categorii -->
+  <section class="section" id="colectie">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Colecție</h2>
+        <a href="magazin.html" class="section-link">Vezi tot</a>
+      </div>
+      <div class="cat-grid">
+        <a href="magazin.html" class="cat-card">
+          <img src="images/p1-hanorac-ecru.png" alt="Hanorace & Bluze" />
+          <div class="label"><span>Top</span><h3>Hanorace & Bluze</h3></div>
+        </a>
+        <a href="magazin.html" class="cat-card">
+          <img src="images/p2-pantaloni-cargo-olive.png" alt="Pantaloni" />
+          <div class="label"><span>Bottom</span><h3>Pantaloni</h3></div>
+        </a>
+        <a href="magazin.html" class="cat-card">
+          <img src="images/p4-set-trening-stone.png" alt="Seturi" />
+          <div class="label"><span>Complet</span><h3>Seturi</h3></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produse recomandate -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Cele mai noi</h2>
+        <a href="magazin.html" class="section-link">Toate produsele</a>
+      </div>
+      <div class="product-grid" id="featured-grid"></div>
+    </div>
+  </section>
+
+  <!-- Bandă valori -->
+  <section class="values">
+    <div class="container" style="padding-top:64px;padding-bottom:64px">
+      <div class="values-grid">
+        <div class="value"><div class="ico">✦</div><h4>Confecționat manual</h4><p>Fiecare piesă, cusută cu grijă.</p></div>
+        <div class="value"><div class="ico">✦</div><h4>Materiale premium</h4><p>Bumbac, in și lână naturală.</p></div>
+        <div class="value"><div class="ico">✦</div><h4>Livrare rapidă</h4><p>Gratuită peste 450 lei.</p></div>
+        <div class="value"><div class="ico">✦</div><h4>Retur 14 zile</h4><p>Simplu și fără bătăi de cap.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="section">
+    <div class="container">
+      <div class="story">
+        <div class="story-media"><img src="images/atelier.png" alt="Atelierul nostru" /></div>
+        <div class="story-text">
+          <p class="eyebrow">Povestea noastră</p>
+          <h2>Croitorie modernă, valori atemporale</h2>
+          <p>Atelier a pornit dintr-o pasiune simplă: a face haine care durează. Lucrăm în loturi mici, confecționăm manual fiecare piesă și alegem doar materiale care îmbătrânesc frumos.</p>
+          <p>Fără tendințe trecătoare, fără producție în masă — doar design curat, croit să te însoțească ani la rând.</p>
+          <a href="contact.html" class="btn btn-light">Despre noi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter section">
+    <div class="container">
+      <h2 class="serif">Intră în comunitate</h2>
+      <p>Primește acces la lansări noi și oferte exclusive.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Adresa ta de email" required />
+        <button type="submit" aria-label="Abonează-te">→</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Atelier</a>
+          <p>Haine confecționate manual, în ediții limitate. Croite în România.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Magazin</h4>
+          <ul>
+            <li><a href="magazin.html">Toate produsele</a></li>
+            <li><a href="magazin.html">Hanorace</a></li>
+            <li><a href="magazin.html">Pantaloni</a></li>
+            <li><a href="magazin.html">Seturi</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Informații</h4>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Livrare & retur</a></li>
+            <li><a href="#">Ghid mărimi</a></li>
+            <li><a href="#">Termeni & condiții</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Abonează-te la jurnal</h4>
+          <form class="newsletter-form footer-news-form">
+            <input type="email" placeholder="Adresa de email" required />
+            <button type="submit" aria-label="Abonează-te">→</button>
+          </form>
+          <div class="socials" style="margin-top:24px">
+            <a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Facebook</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Atelier. Fabricat cu măiestrie în România.</span>
+        <div class="socials"><a href="#">IG</a><a href="#">TT</a><a href="#">FB</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Coș -->
+  <div class="cart-overlay" id="cart-overlay" data-close-cart></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Coș de cumpărături">
+    <div class="cart-header">
+      <h3>Coșul tău</h3>
+      <button class="cart-close" data-close-cart aria-label="Închide">×</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total</span><span class="amount" id="cart-total">0 lei</span></div>
+      <button class="btn btn-dark" id="checkout-btn">Finalizează comanda</button>
+    </div>
+  </aside>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

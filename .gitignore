@@ -1,0 +1,11 @@
+# Tooling local (Claude Code preview)
+.claude/
+
+# Sistem
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
