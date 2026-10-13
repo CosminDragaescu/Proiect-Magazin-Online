@@ -135,3 +135,8 @@ const CATEGORIES = [
   "Pulovere",
   "Seturi",
 ];
+
+/* Mărimi disponibile (implicite pentru toate produsele).
+   Poți seta mărimi diferite per produs adăugând `sizes: [...]`
+   în obiectul produsului de mai sus. */
+const DEFAULT_SIZES = ["XS", "S", "M", "L", "XL", "XXL"];

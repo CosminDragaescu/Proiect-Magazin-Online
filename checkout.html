@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — ATELIER</title>
+  <meta name="description" content="Finalizează comanda Atelier." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=5" />
+</head>
+<body data-page="checkout">
+
+  <section class="page-head" style="padding-bottom:0">
+    <div class="container">
+      <h1>Checkout</h1>
+      <p id="checkout-auth-note"></p>
+      <ol class="checkout-steps">
+        <li>Coș</li>
+        <li>Adresă &amp; plată</li>
+        <li>Confirmare</li>
+        <li>Gata</li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="container" style="padding-bottom:120px">
+    <div id="checkout-layout" class="checkout-grid">
+      <form id="checkout-form" class="checkout-form">
+        <section class="co-section">
+          <h2 class="co-title serif">Contact</h2>
+          <div class="form-row"><label for="co-name">Nume complet</label>
+            <input type="text" id="co-name" name="name" required /></div>
+          <div class="co-two">
+            <div class="form-row"><label for="co-email">Email</label>
+              <input type="email" id="co-email" name="email" required /></div>
+            <div class="form-row"><label for="co-phone">Telefon</label>
+              <input type="tel" id="co-phone" name="phone" required /></div>
+          </div>
+        </section>
+
+        <section class="co-section">
+          <h2 class="co-title serif">Livrare</h2>
+          <div class="form-row"><label for="co-address">Adresă</label>
+            <input type="text" id="co-address" name="address" required /></div>
+          <div class="co-two">
+            <div class="form-row"><label for="co-city">Oraș</label>
+              <input type="text" id="co-city" name="city" required /></div>
+            <div class="form-row"><label for="co-zip">Cod poștal</label>
+              <input type="text" id="co-zip" name="zip" /></div>
+          </div>
+        </section>
+
+        <section class="co-section">
+          <h2 class="co-title serif">Plată</h2>
+          <p class="co-pay-note">Demo — nu se efectuează nicio plată reală. Conectează aici procesatorul de plăți (Stripe, Netopia etc.).</p>
+          <label class="co-pay-option">
+            <input type="radio" name="pay" value="card" checked /> Card bancar (demo)
+          </label>
+          <label class="co-pay-option">
+            <input type="radio" name="pay" value="ramburs" /> Plată la livrare (ramburs)
+          </label>
+        </section>
+
+        <button type="submit" class="btn btn-dark" style="width:100%">Plasează comanda</button>
+      </form>
+
+      <aside class="checkout-aside">
+        <h2 class="co-title serif">Comanda ta</h2>
+        <div id="checkout-summary"></div>
+      </aside>
+    </div>
+  </div>
+
+  <script src="js/products.js?v=5"></script>
+  <script src="js/auth.js?v=5"></script>
+  <script src="js/layout.js?v=5"></script>
+  <script src="js/main.js?v=5"></script>
+</body>
+</html>
